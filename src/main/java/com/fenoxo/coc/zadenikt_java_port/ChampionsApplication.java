@@ -18,7 +18,7 @@ public class ChampionsApplication extends JFrame implements WindowListener, Cham
 	
 	private ChampionsApplication(final String[] args)
 	{
-		super("Corruption of Champions (Java Port) " + Constants.VERSION);
+		super("Corruption of Champions (Java Port) " + ChampionsController.class.getPackage().getImplementationVersion() + " (" + Constants.SUBTITLE + ")");
 		this.setSize(800, 600);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
